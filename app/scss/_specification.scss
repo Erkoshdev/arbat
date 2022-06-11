@@ -10,11 +10,18 @@ body {
 
 .page-wrapper {
   flex: 1;
-  padding-bottom: 120px;
 }
 
 .container-sm {
   max-width: 1120px;
+}
+
+.wrapper {
+  padding: 1px 0;
+}
+
+.bg-gray {
+  background: #EEEEEE;
 }
 
 
@@ -83,6 +90,12 @@ body {
   background: url("../img/icon/whatsapp-orange.png");
   width: 51px;
   height: 51px;
+}
+
+.icon-whatsapp {
+  background: url("../img/icon/whatsapp.svg");
+  width: 22px;
+  height: 22px;
 }
 
 .icon-location {
@@ -309,6 +322,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s ease;
+}
+
+.btn span {
+  transition: 0.2s ease;
+}
+
+.btn span + i {
+  margin-left: 12px;
+}
+
+.btn i + span  {
+  margin-left: 12px;
 }
 
 .btn-black {
@@ -321,28 +347,18 @@ body {
   line-height: 18px;
   color: #FFFFFF;
   white-space: nowrap;
-}
 
-.btn-black:hover {
-  color: #FFFFFF;
-}
-
-.btn-black span {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  color: #FFFFFF;
-  white-space: nowrap;
-}
-
-.btn i {
-  margin-left: 12px;
-  transition: 0.35s ease-in-out;
-}
-
-.btn:hover i {
-  transform: translateX(7px);
+  span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+  &:hover {
+    color: #FFFFFF;
+  }
 }
 
 .btn-warning-border {
@@ -353,16 +369,40 @@ body {
   color: #FF4D00;
   min-height: 48px;
   white-space: nowrap;
+
+  span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FF4D00;
+    display: block;
+    white-space: nowrap;
+  }
 }
 
-.btn-warning-border span {
+.btn-warning {
+  background: #FF4D00;
+  border-radius: 6px;
+  padding: 8px 24px;
+  min-height: 48px;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-  color: #FF4D00;
-  display: block;
-  white-space: nowrap;
+  color: #FFFFFF;
+  border: none;
+
+  span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    background: #e05114;
+  }
 }
+
 
 .text-link {
   font-weight: 600;
@@ -404,9 +444,10 @@ body {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.16);
   border-radius: 50px;
   width: fit-content;
-  padding: 6px 24px 6px 6px;
+  padding: 6px 24px 0 6px;
   align-items: center;
-  margin-bottom: 0;
+  flex-wrap: wrap;
+  margin: 40px 0;
 }
 
 .breadcrumb a {
@@ -423,6 +464,8 @@ body {
   line-height: 130%;
   color: #383736;
   margin-right: 16px;
+  align-items: center;
+  margin-bottom: 6px;
 }
 
 .back-link:hover {
@@ -445,19 +488,28 @@ body {
   font-size: 15px;
   line-height: 130%;
   color: #6E7F9C;
+  height: fit-content;
 }
 
 .breadcrumb li {
   font-weight: 600;
   font-size: 15px;
-  line-height: 130%;
+  line-height: 100%;
   text-transform: capitalize;
   color: #383736;
   position: relative;
+  white-space: nowrap;
+  display: block;
+  height: fit-content;
 }
 
 .breadcrumb li + li {
   padding-left: 40px;
+  margin-bottom: 6px;
+}
+
+.breadcrumb li:first-of-type {
+  margin-bottom: 6px;
 }
 
 .breadcrumb li + li:before {

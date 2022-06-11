@@ -1,5 +1,8 @@
 //desktops
 @media (min-width: 1200px) and  (max-width: 1399px) {
+  .container-sm {
+    max-width: 1120px;
+  }
   .mobile-menu {
     margin-left: 70px;
   }
@@ -415,6 +418,58 @@
   .project-card-title p {
     font-size: 16px;
   }
+  .title-wrapper {
+    display: block;
+  }
+  .select-property-type {
+    margin-top: 20px;
+  }
+  .community-location .transport-col {
+    order: 1;
+  }
+  .community-location .map-col {
+    order: 2;
+  }
+  .community-location-transport {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .community-transport-item {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 15px 20px;
+  }
+  .community-transport-item:before {
+    width: 8px;
+  }
+  .community-transport-icon {
+    margin-right: 20px;
+  }
+  .community-transport-caption {
+    display: block;
+  }
+  .community-transport-item h6 {
+    min-width: initial;
+    font-size: 48px;
+    line-height: 120%;
+    margin-right: 0;
+  }
+  .community-transport-item+.community-transport-item {
+    margin-top: 10px;
+  }
+  .community-location-map {
+    height: 400px;
+    margin-top: 40px;
+  }
+  .nearby-communities {
+    margin-top: 60px;
+  }
+  .community-page .request-wrapper.with-bg {
+    padding: 70px 0;
+  }
+
 }
 
 //landscape phones
@@ -785,6 +840,60 @@
   .project-card-img {
     height: 200px;
   }
+
+
+  .title-wrapper {
+    display: block;
+  }
+  .select-property-type {
+    margin-top: 20px;
+  }
+  .community-location {
+    margin-top: 60px;
+  }
+  .community-location .transport-col {
+    order: 1;
+  }
+  .community-location .map-col {
+    order: 2;
+  }
+  .community-location-transport {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .community-transport-item {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 15px 20px;
+  }
+  .community-transport-item:before {
+    width: 8px;
+  }
+  .community-transport-icon {
+    margin-right: 20px;
+  }
+  .community-transport-item h6 {
+    font-size: 56px;
+    line-height: 120%;
+    min-width: 75px;
+    margin-right: 45px;
+  }
+  .community-transport-item+.community-transport-item {
+    margin-top: 10px;
+  }
+  .community-location-map {
+    height: 350px;
+    margin-top: 30px;
+  }
+  .nearby-communities {
+    margin-top: 60px;
+  }
+  .community-page .request-wrapper.with-bg {
+    padding: 70px 0;
+  }
+
 }
 
 //phones
@@ -1166,8 +1275,8 @@
     border-radius: 0;
     height: 300px;
   }
-  .apartments-slider-row {
-    padding: 20px 0;
+  .breadcrumb {
+    margin: 20px 0;
   }
   .search-box {
     max-width: 100%;
@@ -1209,6 +1318,7 @@
     padding: 9px 16px;
     font-size: 16px;
     font-weight: 500;
+    border: 1.5px solid #ededed;
   }
   .filter-row-button {
     margin-top: 15px;
@@ -1225,7 +1335,7 @@
   .btn-black {
     font-size: 18px;
   }
-  .ready-apartments-page .sorting-box-wrapper {
+  .ready-apartments-page .sorting-box {
     margin-top: 20px;
   }
   .sorting-value p {
@@ -1253,10 +1363,138 @@
   .title-sm {
     font-size: 28px;
   }
+  .community-preview {
+    margin-top: 80px;
+  }
+  .community-link.orange-bg {
+    padding: 5px 10px;
+  }
+  .community-link.orange-bg span {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .community-link.white-bg {
+    padding: 5px 10px;
+  }
+  .community-link-wrapper+.community-link-wrapper {
+    margin-top: 20px;
+  }
+  .community-link:not(.orange-bg,.white-bg) {
+    padding: 4px 10px 4px 13px;
+  }
+  .title-wrapper {
+    display: block;
+  }
+  .select-property-type {
+    margin-top: 20px;
+    display: block;
+  }
+  .select-property-type span {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .select-property-type .bootstrap-select {
+    width: 180px!important;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .community-projects .apartments-card-wrapper {
+    margin-top: 25px;
+  }
+  .community-location {
+    margin-top: 40px;
+  }
+  .community-location .transport-col {
+    order: 1;
+  }
+  .community-location .map-col {
+    order: 2;
+  }
+  .community-transport-caption {
+    display: block;
+  }
+  .community-location-transport {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .community-transport-item {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 15px 20px 15px 25px;
+  }
+  .community-transport-item:before {
+    width: 8px;
+  }
+  .community-transport-icon {
+    margin-right: 20px;
+  }
+  .community-transport-item h6 {
+    font-size: 44px;
+    line-height: 120%;
+    min-width: initial;
+    margin-right: 0;
+  }
+  .community-transport-item p {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .community-transport-item+.community-transport-item {
+    margin-top: 10px;
+  }
+  .community-location-map {
+    height: 350px;
+    margin: 15px -15px 0 -15px;
+    width: calc(100% + 30px);
+    border-radius: 0;
+  }
+  .nearby-communities {
+    margin-top: 40px;
+  }
+  .community-page .request-wrapper.with-bg {
+    padding: 40px 0;
+  }
+  .breadcrumb li {
+    max-width: 125px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .breadcrumb li a {
+    max-width: 125px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .back-link {
+    margin-right: 10px;
+  }
+  .breadcrumb li+li {
+    padding-left: 30px;
+  }
+  .breadcrumb li+li:before {
+    left: 5px;
+  }
+  .ready-apartments-page {
+    padding-bottom: 50px;
+  }
+  .off-plan-apartments-page {
+    padding-bottom: 50px;
+  }
 }
 
+
+//additional media queries
 @media (min-width: 992px) {
   .modal-lg {
     max-width: 840px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container-sm {
+    max-width: 1120px;
   }
 }

@@ -645,6 +645,7 @@ footer {
 
 .main-page {
   background: #EEEEEE;
+  padding-bottom: 80px;
 }
 
 .apartments-card-sm {
@@ -831,10 +832,7 @@ footer {
 .apartments-slider {
   height: 300px;
   background: url("../img/main/ready-bg.png") no-repeat center/cover;
-}
-
-.apartments-slider-row {
-  padding: 40px 0;
+  padding-top: 1px;
 }
 
 .search-box {
@@ -926,7 +924,7 @@ footer {
   color: #FFFFFF;
 }
 
-.ready-apartments-page .sorting-box-wrapper {
+.ready-apartments-page .sorting-box {
   margin-top: 40px;
 }
 
@@ -1016,7 +1014,7 @@ footer {
 }
 
 .off-plan-header {
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 
 .off-plan-header h2 {
@@ -1051,8 +1049,8 @@ footer {
 }
 
 .community-slider-row {
-  height: 540px;
-  padding: 40px 0;
+  min-height: 540px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -1386,12 +1384,18 @@ footer {
   margin-top: 6px;
 }
 
+.community-transport-caption {
+  display: flex;
+  align-items: center;
+}
+
 .community-transport-item h6 {
   font-weight: 700;
   font-size: 74px;
   line-height: 90px;
   color: #333333;
   margin-right: 65px;
+  min-width: 100px;
 }
 
 .community-transport-item p {
@@ -1408,7 +1412,7 @@ footer {
 .community-location-map {
   width: 100%;
   height: 100%;
-  max-height: 600px;
+  height: 600px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1437,9 +1441,172 @@ footer {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.671103) 4.69%, rgba(255, 255, 255, 0.671103) 4.7%, rgba(255, 255, 255, 0) 15.58%, rgba(255, 255, 255, 0) 76.44%, #EEEEEE 100%, #FFFFFF 100%), url("../img/main/service-bg.png") no-repeat center/cover
 }
 
-.community-page {
-  padding-bottom: 0;
+.project-slider .swiper-button-prev:after, .project-slider .swiper-button-next:after {
+  content: none;
 }
 
+.project-slider .swiper-button-prev, .project-slider .swiper-button-next {
+  background: #FFFFFF;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  z-index: 5;
+  margin-top: 0;
+  top: initial;
+  bottom: 208px;
+}
+
+.project-slider-item {
+  width: fit-content;
+}
+
+.project-slider-img {
+  height: 415px;
+  width: auto;
+  max-width: 645px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-slider-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-slider .container {
+  position: relative;
+}
+
+.property-info {
+  margin-top: 80px;
+  display: flex;
+}
+
+.property-info-left {
+  width: 57%;
+  padding-right: 50px;
+}
+
+.property-info-right {
+  width: 43%;
+}
+
+.property-info-caption {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px -12px -12px -12px;
+}
+
+.property-info-item {
+  width: calc(50% - 24px);
+  margin: 12px;
+}
+
+.property-info-item span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8E8E8E;
+  display: block;
+}
+
+.property-info-item p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333333;
+}
+
+.property-info-help {
+  background: url("../img/main/request2.png") no-repeat 120% 50%/contain, #FFFFFF;
+  border: 1px solid #D6D6D6;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 30px 160px 30px 30px;
+}
+
+.property-info-help h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #333333;
+}
+
+.property-info-help p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #8E8E8E;
+  margin-top: 16px;
+  padding-right: 40px;
+}
+
+.property-info-help-buttons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.property-info-help-buttons .btn + .btn {
+  margin-left: 16px;
+}
+
+.info-tab {
+  margin-top: 75px;
+}
+
+.info-tab .nav-tabs {
+  border-bottom: 1px solid #EDEDED;
+}
+
+.info-tab .nav-tabs a {
+  padding: 0 22px 20px 22px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333333;
+  display: inline-block;
+}
+
+.info-tab .nav-tabs a.active {
+  border-bottom: 5px solid #FF4D00;
+}
+
+.info-tab .tab-content {
+  margin-top: 40px;
+}
+
+.map-large {
+  width: 100%;
+  height: 500px;
+}
+
+.map-large iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.off-plan-detail-page .request {
+  margin-top: 80px;
+}
+
+.off-plan-detail-page .cards-wrapper {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.similar-projects .apartments-card-wrapper {
+  margin-top: 40px;
+}
+
+.ready-apartments-page {
+  padding-bottom: 160px;
+}
+
+.off-plan-apartments-page {
+  padding-bottom: 120px;
+}
 
 @import "media";
