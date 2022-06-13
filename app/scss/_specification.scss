@@ -17,7 +17,7 @@ body {
 }
 
 .wrapper {
-  padding: 1px 0;
+  padding: 0.1px 0;
 }
 
 .bg-gray {
@@ -329,11 +329,11 @@ body {
   transition: 0.2s ease;
 }
 
-.btn span + i {
+.btn span + i, .btn span + svg {
   margin-left: 12px;
 }
 
-.btn i + span  {
+.btn i + span, .btn svg + span  {
   margin-left: 12px;
 }
 

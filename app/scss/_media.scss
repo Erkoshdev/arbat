@@ -100,6 +100,9 @@
   .main-page {
     padding-bottom: 60px;
   }
+  .property-info-help {
+    background-position: 200% 50%;
+  }
 }
 
 //tablets
@@ -469,7 +472,27 @@
   .community-page .request-wrapper.with-bg {
     padding: 70px 0;
   }
-
+  .project-slider-img {
+    height: 300px;
+  }
+  .project-slider .swiper-button-prev, .project-slider .swiper-button-next {
+    bottom: 150px;
+  }
+  .property-info {
+    display: block;
+    margin-top: 60px;
+  }
+  .property-info-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .property-info-right {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .property-info-help {
+    background-position: right center;
+  }
 }
 
 //landscape phones
@@ -840,8 +863,6 @@
   .project-card-img {
     height: 200px;
   }
-
-
   .title-wrapper {
     display: block;
   }
@@ -894,6 +915,41 @@
     padding: 70px 0;
   }
 
+  .project-slider-img {
+    height: 250px;
+  }
+  .project-slider .swiper-button-prev, .project-slider .swiper-button-next {
+    bottom: 125px;
+  }
+  .property-info {
+    display: block;
+    margin-top: 40px;
+  }
+  .property-info-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .property-info-right {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .property-info-help {
+    background-position: 120% 50%;
+    padding: 20px 160px 20px 20px;
+  }
+  .info-tab-about {
+    display: block;
+  }
+  .map-large {
+    height: 400px;
+  }
+  #infoAbout .info-tab-img {
+    width: 100%;
+  }
+  #infoAbout .info-tab-caption {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 //phones
@@ -1218,8 +1274,8 @@
   }
   .request {
     flex-direction: column;
-    margin-right: var(--bs-gutter-x, -0.75rem);
-    margin-left: var(--bs-gutter-x, -0.75rem);
+    margin-right: -15px;
+    margin-left: -15px;
     border-radius: 0;
     box-shadow: none;
   }
@@ -1479,6 +1535,103 @@
   }
   .off-plan-apartments-page {
     padding-bottom: 50px;
+  }
+
+  .project-slider-img {
+    height: 250px;
+  }
+  .project-slider .swiper-button-prev, .project-slider .swiper-button-next {
+    bottom: 125px;
+  }
+  .property-info {
+    display: block;
+    margin-top: 40px;
+  }
+  .property-info-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .property-info-caption {
+    display: block;
+  }
+  .property-info-item {
+    width: calc(100% - 24px);
+  }
+  .property-info-item span {
+    font-size: 16px;
+  }
+  .property-info-item p {
+    font-weight: 600;
+  }
+  .property-info-right {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .property-info-help {
+    background: #fff;
+    padding: 20px;
+  }
+  .info-tab {
+    margin-top: 40px;
+  }
+  .info-tab .nav-tabs {
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+  .info-tab .nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .info-tab .nav-tabs a {
+    padding: 0 15px 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .info-tab .nav-tabs a.active {
+    border-width: 3px;
+  }
+  .info-tab .tab-content {
+    margin-top: 20px;
+  }
+  .info-tab-about {
+    display: block;
+  }
+  .map-large {
+    height: 400px;
+  }
+  #infoAbout .info-tab-img {
+    width: 100%;
+    height: 250px;
+  }
+  #infoAbout .info-tab-caption {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  #infoAbout h6 {
+    font-size: 26px;
+  }
+  #infoAbout p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .presentation-link-box {
+    margin: 40px 0;
+    padding: 50px 15px;
+  }
+  .presentation-link-box h6 {
+    font-size: 28px;
+  }
+  .off-plan-detail-page .request {
+    margin-top: 0;
+  }
+  .off-plan-detail-page .cards-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .similar-projects .apartments-card-wrapper {
+    margin-top: 10px;
   }
 }
 

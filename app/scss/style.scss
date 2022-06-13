@@ -1609,4 +1609,67 @@ footer {
   padding-bottom: 120px;
 }
 
+.info-tab-about {
+  display: flex;
+}
+
+#infoAbout .info-tab-img {
+  width: 270px;
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#infoAbout .info-tab-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#infoAbout .info-tab-caption {
+  margin-left: 38px;
+}
+
+#infoAbout h6 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FF4D00;
+}
+
+#infoAbout p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: -0.015em;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.presentation-link-box {
+  padding: 80px 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.68)), url('../img/main/present-bg.png') no-repeat center/cover;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  margin: 80px 0;
+}
+
+.presentation-link-box h6 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: #333333;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.presentation-link-box .btn {
+  margin: 20px auto 0 auto;
+}
+
+
+
 @import "media";
