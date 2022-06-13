@@ -1670,6 +1670,396 @@ footer {
   margin: 20px auto 0 auto;
 }
 
+.ready-info {
+  display: flex;
+  padding: 60px 0 100px 0;
+}
+
+.ready-info-left {
+  width: 65%;
+}
+
+.ready-info-right {
+  width: calc(35% - 40px);
+  padding-top: 25px;
+  margin-left: 40px;
+}
+
+.ready-info .title-sm {
+  margin-bottom: 16px;
+}
+
+.ready-info-item {
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.ready-info-item + .ready-info-item {
+  margin-top: 32px;
+}
+
+.ready-info-location {
+  display: flex;
+  align-items: center;
+}
+
+.ready-info-location span {
+  display: block;
+  margin-left: 13px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #8E8E8E;
+}
+
+.apartments-meta-lg {
+  list-style: none;
+  margin: -17px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.apartments-meta-lg li {
+  margin: 17px;
+  display: flex;
+}
+
+.apartments-meta-caption {
+  margin-left: 8px;
+}
+
+.apartments-meta-lg span {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8E8E8E;
+}
+
+.apartments-meta-lg p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333333;
+}
+
+.title-xs {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.amenities-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+
+.amenities-list li {
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  box-shadow: 0 3px 0 rgba(22, 22, 22, 0.06);
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 120%;
+  color: #333333;
+}
+
+.ready-info-description p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: #333333;
+}
+
+.ready-info-description p + p {
+  margin-top: 20px;
+}
+
+.ready-info-description p + ul {
+  margin-top: 20px;
+}
+
+.ready-info-description ul + p {
+  margin-top: 20px;
+}
+
+.read-description-nav {
+  list-style: none;
+}
+
+.read-description-nav li + li {
+  margin-top: 10px;
+}
+
+.read-description-nav li {
+  position: relative;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: #333333;
+  padding-left: 24px;
+}
+
+.read-description-nav li:before {
+  content: '';
+  background: #FF4D00;
+  width: 8px;
+  height: 8px;
+  top: 5px;
+  left: 0;
+  position: absolute;
+}
+
+.ready-info-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ready-info-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.ready-info-item:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.agent-card {
+  background: #F8F8F8;
+}
+
+.agent-card-top {
+  padding: 18px 28px;
+  background: #FF4D00;
+  border-radius: 10px 10px 0 0;
+}
+
+.agent-card-top h6 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.agent-card-top p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.agent-card-body {
+  border-radius: 0 0 10px 10px;
+  padding: 22px 16px 20px 16px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+.agent-badge {
+  display: flex;
+}
+
+.agent-badge-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.agent-badge-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agent-badge-caption {
+  margin-left: 15px;
+}
+
+.agent-badge-caption h6 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8E8E8E;
+}
+
+.agent-badge-caption p {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 130%;
+  color: #383736;
+  margin-top: 6px;
+}
+
+.agent-badge-btn {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.agent-badge-btn .btn-black {
+  width: calc(50% - 5px);
+}
+
+.agent-badge-btn .btn-black + .btn-black {
+  margin-left: 10px;
+}
+
+.agent-badge-btn .btn-success {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.apartment-slider {
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 100%;
+  height: 560px;
+}
+
+.apartment-slider-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.apartment-slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.apartment-slider .swiper-button-prev, .apartment-slider .swiper-button-next {
+  background: #FFFFFF;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  z-index: 5;
+  margin-top: 0;
+}
+
+.apartment-slider .swiper-button-prev:after, .apartment-slider .swiper-button-next:after {
+  content: none;
+}
+
+.apartment-slider .swiper-button-prev {
+  left: 20px;
+}
+
+.apartment-slider .swiper-button-next {
+  right: 20px;
+}
+
+.ready-detail-page .request {
+  margin: 100px 0;
+}
+
+.rent-page .filter-row-select {
+  width: 100%;
+}
+
+.rent-page .sorting-box {
+  margin-top: 40px;
+}
+
+.rent-page .cards-wrapper {
+  margin-top: 40px;
+}
+
+.rent-page {
+  padding-bottom: 100px;
+}
+
+.sell-slider {
+  background: url("../img/main/sell-bg.png") no-repeat center/cover;
+  padding-top: 0.1px;
+}
+
+.sell-helper {
+  display: flex;
+  align-items: center;
+  padding: 60px 0 100px 0;
+}
+
+.sell-helper-left {
+  width: 53%;
+}
+
+.sell-helper-left h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.sell-helper-left p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.sell-helper-right {
+  width: calc(47% - 55px);
+  margin-left: 55px;
+}
+
+.sell-request {
+  background: #FFFFFF;
+  box-shadow: 0 5px 0 rgba(22, 22, 22, 0.16);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.sell-request-title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: #333333;
+}
+
+.sell-form {
+  margin-top: 24px;
+}
+
+.sell-request .request-form-bottom {
+  display: block;
+  margin-top: 20px;
+}
+
+.sell-request .request-form-bottom button {
+  margin-left: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sell-expect {
+  margin-top: 100px;
+}
+
+.sell-expect p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: #333333;
+}
+
+
 
 
 @import "media";
