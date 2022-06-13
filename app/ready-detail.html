@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="main-wrapper">
+  <div class="page-wrapper off-plan-detail-page">
+    <div class="wrapper">
+      <div class="container container-sm">
+        <ul class="breadcrumb">
+          <a class="back-link" href="">Back</a>
+          <li>
+            <a href="index.html">Main</a>
+          </li>
+          <li>
+            <a href="index.html">Buy</a>
+          </li>
+          <li>
+            <a href="index.html">Emaar Beachfront</a>
+          </li>
+          <li>Type A I Chiller Free I Fully Furnished I Vacant</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide project-slider-item">
+          <div class="project-slider-img">
+            <img src="img/main/project-slider1.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide project-slider-item">
+          <div class="project-slider-img">
+            <img src="img/main/project-slider2.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide project-slider-item">
+          <div class="project-slider-img">
+            <img src="img/main/project-slider3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container container-sm">
+        <div class="swiper-button-prev project-slider-prev">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.86334 3.46967C9.57044 3.17678 9.09557 3.17678 8.80268 3.46967L4.80268 7.46967C4.50978 7.76256 4.50978 8.23744 4.80268 8.53033L8.80268 12.5303C9.09557 12.8232 9.57044 12.8232 9.86334 12.5303C10.1562 12.2374 10.1562 11.7626 9.86334 11.4697L6.39367 8L9.86334 4.53033C10.1562 4.23744 10.1562 3.76256 9.86334 3.46967Z" fill="#333333"/>
+          </svg>
+        </div>
+        <div class="swiper-button-next project-slider-next">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.13569 3.46967C6.42858 3.17678 6.90345 3.17678 7.19635 3.46967L11.1963 7.46967C11.4892 7.76256 11.4892 8.23744 11.1963 8.53033L7.19635 12.5303C6.90345 12.8232 6.42858 12.8232 6.13569 12.5303C5.84279 12.2374 5.84279 11.7626 6.13569 11.4697L9.60536 8L6.13569 4.53033C5.84279 4.23744 5.84279 3.76256 6.13569 3.46967Z" fill="#333333"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container container-sm">
+        <div class="">
+          <div class="-left">
+
+          </div>
+          <div class="-right"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper bg-gray">
+      <div class="container container-sm">
+        <div class="request">
+          <div class="request-left">
+            <div class="request-title">
+              <h2>Make a <span>Request</span></h2>
+              <p>We cooperate with the most proven developers in Dubai</p>
+            </div>
+            <form class="request-form" action="">
+              <div class="half-form">
+                <div class="form-group">
+                  <i class="icon icon-user"></i>
+                  <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <i class="icon icon-smartphone"></i>
+                  <input type="text" placeholder="Phone number">
+                </div>
+              </div>
+              <div class="form-group">
+                <i class="icon icon-email"></i>
+                <input type="email" placeholder="E-mail">
+              </div>
+              <div class="form-group textarea-form">
+                <i class="icon icon-text"></i>
+                <textarea name="" rows="4" placeholder="Message"></textarea>
+              </div>
+              <div class="request-form-bottom">
+                <div class="accept-form">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <p>I accept the <a href="">Terms and Condition</a></p>
+                </div>
+                <button class="btn btn-black">
+                  <span>Learn more</span>
+                  <i class="icon icon-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="request-right">
+            <div class="request-img">
+              <img src="img/main/request3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/swiper.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  //автоизменение высоты textarea
+  const tx = document.getElementsByTagName("textarea");
+  for (let i = 0; i < tx.length; i++) {
+    tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+    tx[i].addEventListener("input", OnInput, false);
+  }
+  function OnInput() {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+  }
+
+  //slider
+  const projectSlider = new Swiper('.project-slider', {
+    speed: 700,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+      nextEl: ".project-slider-next",
+      prevEl: ".project-slider-prev",
+    },
+  });
+</script>
+</body>
+</html>
