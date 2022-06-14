@@ -109,6 +109,12 @@
   .ready-info-map {
     height: 450px;
   }
+  .sell-form .half-form {
+    display: block;
+  }
+  .sell-form .half-form .form-group {
+    width: calc(100% - 16px);
+  }
 }
 
 //tablets
@@ -508,6 +514,40 @@
   .ready-info-right {
     width: 100%;
     margin-left: 0;
+  }
+
+  .sell-helper {
+    padding: 40px 0 60px 0;
+  }
+  .sell-helper-left {
+    width: 45%;
+  }
+  .sell-helper-left h1 {
+    font-size: 36px;
+  }
+  .sell-helper-right {
+    width: calc(55% - 30px);
+    margin-left: 30px;
+  }
+  .sell-request {
+    padding: 25px;
+  }
+  .sell-form {
+    margin-top: 15px;
+  }
+  .sell-form .half-form {
+    display: block;
+  }
+  .sell-form .half-form .form-group {
+    width: calc(100% - 16px);
+  }
+  .management-progress-item {
+    width: calc(50% - 16px);
+  }
+  .management-article {
+    margin: 10px;
+    width: calc(100% - 20px);
+    padding: 40px 30px 100px 30px;
   }
 }
 
@@ -1000,6 +1040,51 @@
   }
   .ready-detail-page .request {
     margin: 60px 0;
+  }
+
+  .sell-helper {
+    padding: 40px 0 60px 0;
+    display: block;
+  }
+  .sell-helper-left {
+    width: 100%;
+  }
+  .sell-helper-left h1 {
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .sell-helper-left p {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .sell-helper-right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .sell-expect {
+    margin: 60px 0 30px 0;
+  }
+  .sell-page .request-wrapper.with-bg {
+    padding: 70px 0;
+  }
+  .management-progress-item {
+    width: calc(50% - 16px);
+  }
+  .management-article {
+    margin: 10px;
+    width: calc(100% - 20px);
+    padding: 25px 20px 120px 20px;
+  }
+  .management-article h6 {
+    font-size: 30px;
+    line-height: 110%;
+  }
+  .management-article p {
+    line-height: 110%;
+  }
+  .management-article p+p {
+    margin-top: 15px;
   }
 }
 
@@ -1727,6 +1812,77 @@
   }
   .rent-page {
     padding-bottom: 60px;
+  }
+  .sell-helper {
+    padding: 40px 0 60px 0;
+    display: block;
+  }
+  .sell-helper-left {
+    width: 100%;
+  }
+  .sell-helper-left h1 {
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .sell-helper-left p {
+    font-size: 16px;
+    line-height: 120%;
+    margin-top: 15px;
+  }
+  .sell-helper-right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .sell-request {
+    padding: 20px;
+  }
+  .sell-request .half-form {
+    display: block;
+  }
+  .sell-request .half-form .form-group {
+    width: calc(100% - 16px);
+  }
+  .sell-expect {
+    margin: 30px 0 0 0;
+  }
+  .sell-expect p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .sell-page .request-wrapper.with-bg {
+    padding: 40px 0;
+  }
+
+  .management-page .title-lg {
+    font-size: 30px;
+  }
+  .management-progress-item {
+    width: calc(50% - 16px);
+  }
+  .management-progress-item p {
+    margin-top: 0;
+  }
+  .management-article-wrapper {
+    margin-top: 30px;
+  }
+  .management-article {
+    margin: 10px;
+    width: calc(100% - 20px);
+    padding: 20px 20px 120px 20px;
+  }
+  .management-article h6 {
+    font-size: 24px;
+    line-height: 110%;
+  }
+  .management-article p {
+    font-size: 16px;
+  }
+  .management-article p+p {
+    margin-top: 15px;
+  }
+  .management-page .request {
+    margin: 20px 0 60px 0;
   }
 }
 
