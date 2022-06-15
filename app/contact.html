@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="main-wrapper">
+  <div class="page-wrapper contact-page">
+    <div class="wrapper">
+      <div class="container container-sm">
+        <ul class="breadcrumb">
+          <a class="back-link" href="">Back</a>
+          <li>
+            <a href="index.html">Main</a>
+          </li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </div>
+    <div class="map-large">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28908.61609584733!2d55.15158362491239!3d25.082321893003915!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1654931394689!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="wrapper">
+      <div class="container container-sm">
+        <div class="contact-wrapper">
+          <div class="contact-list">
+            <h6 class="contact-list-title">Arbat Realty</h6>
+            <div class="contact-item">
+              <h6 class="contact-item-title">Address:</h6>
+              <div class="contact-item-text">
+                <i class="icon icon-pin-orange"></i>
+                <p>Office 1142, Al manara tower, Business Day, UAE</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <h6 class="contact-item-title">Phone:</h6>
+              <div class="contact-item-text-wrapper">
+                <div class="contact-item-text">
+                  <i class="icon icon-phone-orange"></i>
+                  <p>+971 54 321 1231</p>
+                  <a class="absolute-link" href="tel:+971543211231"></a>
+                </div>
+                <div class="contact-item-text">
+                  <i class="icon icon-phone-orange"></i>
+                  <p>+971 12 345 5672</p>
+                  <a class="absolute-link" href="tel:+971123455672"></a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <h6 class="contact-item-title">Email:</h6>
+              <div class="contact-item-text">
+                <i class="icon icon-email-orange"></i>
+                <p>+971 54 321 1231</p>
+                <a href="mailto:" class="absolute-link"></a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <h6 class="contact-item-title">Post box:</h6>
+              <div class="contact-item-text">
+                <p>123467 Dubai</p>
+              </div>
+            </div>
+          </div>
+          <div class="request-sm">
+            <div class="request-title">
+              <h2>Make a <span>Request</span></h2>
+              <p>We cooperate with the most proven developers in Dubai</p>
+            </div>
+            <form class="request-form" action="">
+              <div class="half-form">
+                <div class="form-group">
+                  <i class="icon icon-user"></i>
+                  <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <i class="icon icon-smartphone"></i>
+                  <input type="text" placeholder="Phone number">
+                </div>
+              </div>
+              <div class="form-group">
+                <i class="icon icon-email"></i>
+                <input type="email" placeholder="E-mail">
+              </div>
+              <div class="form-group textarea-form">
+                <i class="icon icon-text"></i>
+                <textarea name="" rows="4" placeholder="Message"></textarea>
+              </div>
+              <div class="request-form-bottom">
+                <div class="accept-form">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <p>I accept the <a href="">Terms and Condition</a></p>
+                </div>
+                <button class="btn btn-black">
+                  <span>Submit</span>
+                  <i class="icon icon-send"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partners">
+      <h6 class="title-sm">Our partners</h6>
+      <div class="partners-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/main/partner-arcluce.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/partner-ufo.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/partner-zumtobel.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/partner-sylvania.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/partner-blui.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/partner-griven.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/partner-unilamp.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/swiper.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  //slider
+  const partnerSlider = new Swiper('.partners-slider', {
+    speed: 800,
+    slidesPerView: "auto",
+    loop: true,
+    autoplay: {
+      delay: 3000
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 30,
+      },
+      768: {
+        spaceBetween: 80,
+      }
+    }
+  });
+
+  //автоизменение высоты textarea
+  const tx = document.getElementsByTagName("textarea");
+  for (let i = 0; i < tx.length; i++) {
+    tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+    tx[i].addEventListener("input", OnInput, false);
+  }
+  function OnInput() {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+  }
+</script>
+</body>
+</html>
