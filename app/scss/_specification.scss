@@ -181,7 +181,7 @@ body {
 
 .form-group input {
   background: transparent;
-  margin-left: 12px;
+  margin-left: 10px;
   flex: 1;
   font-weight: 600;
   font-size: 15px;
@@ -360,6 +360,15 @@ body {
   }
 }
 
+.select-form {
+  .dropdown-toggle {
+    color: #000;
+  }
+  .bs-placeholder {
+    color: #8E8E8E;
+  }
+}
+
 .form-group.select-form {
   padding: 0;
   .dropdown-toggle {
@@ -400,6 +409,59 @@ body {
   margin-left: 12px;
 }
 
+.btn-white {
+  padding: 8px 24px;
+  min-height: 48px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  white-space: nowrap;
+
+  span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+    white-space: nowrap;
+  }
+  &:hover {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+  }
+}
+
+.btn-white-border {
+  border: 1px solid #FFFFFF;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  min-height: 48px;
+  white-space: nowrap;
+  background: transparent;
+
+  span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+    display: block;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    color: #333333;
+    border-color: #ffffff;
+    background: #ffffff;
+  }
+}
+
 .btn-black {
   padding: 8px 24px;
   min-height: 48px;
@@ -410,6 +472,7 @@ body {
   line-height: 18px;
   color: #FFFFFF;
   white-space: nowrap;
+  transition: 0.3s ease;
 
   span {
     display: inline-block;
@@ -419,8 +482,10 @@ body {
     color: #FFFFFF;
     white-space: nowrap;
   }
+
   &:hover {
     color: #FFFFFF;
+    background: #898989;
   }
 }
 
@@ -432,6 +497,8 @@ body {
   color: #FF4D00;
   min-height: 48px;
   white-space: nowrap;
+  position: relative;
+  transition: 0.3s ease;
 
   span {
     font-weight: 600;
@@ -440,6 +507,19 @@ body {
     color: #FF4D00;
     display: block;
     white-space: nowrap;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    background: #FF4D00;
+  }
+
+  &:hover span {
+    color: #fff;
+  }
+
+  &:hover .icon {
+    background: url("../img/icon/arrow-right.svg");
   }
 }
 
